@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="config.css">
+    <link rel="icon" href="icon.png">
+    <title>Game</title>
+</head>
+<body>
+    <!-- МЕНЮ !-->
+    <div class="off" id="game_menu">
+        <span id="menu_pkt_0">• МЕНЮ •</span>
+        <hr>
+        <span id="menu_pkt_1">ВЕРНУТЬСЯ В ИГРУ</span>
+        <span id="menu_pkt_2">НАСТРОЙКИ</span>
+        <span id="menu_pkt_3">СТАТИСТИКА</span>
+    </div>
+
+    <!-- НАСТРОЙКИ !-->
+    <div id="game_settings">
+        <span>• НАСТРОЙКИ •</span>
+        <hr>
+        <div id="set_1">Управление
+            
+        <table>
+	        <tbody>
+	        	<tr>
+	        		<td>Движение вверх</td>
+	        		<td>W</td>
+	        	</tr>
+	        	<tr>
+	        		<td>Движение влево</td>
+	        		<td>A</td>
+	        	</tr>
+	        	<tr>
+	        		<td>Движение вниз</td>
+	        		<td>S</td>
+	        	</tr>
+	        	<tr>
+	        		<td>Движение вправо</td>
+	        		<td>D</td>
+	        	</tr>
+	        	<tr>
+	        		<td>Взаимодействовать</td>
+	        		<td>E</td>
+	        	</tr>
+	        	<tr>
+	        		<td></td>
+	        		<td></td>
+	        	</tr>
+	        	<tr>
+	        		<td></td>
+	        		<td></td>
+	        	</tr>
+	        </tbody>
+        </table>
+
+
+            
+        </div>
+        <div id="set_2">Графика
+            <span></span>
+        </div>
+        <div id="set_3">Звук
+            <span></span>
+        </div>
+        <hr>
+        <div id="set_ok">ПРИМЕНИТЬ</div>
+    </div>
+
+    <!-- Главный экран !-->
+    <div class="viewer" id="viewer">
+        <canvas id='canvas'></canvas>
+    </div>
+    <div class="telemetry">
+            <hr>
+        <div>
+            Парамаетры мира:
+            <hr>Время: <span id="world_time"></span>
+            <br>День: <span id="world_day"></span>
+            <br>Сезон: <span id="world_season"></span>
+            <br>Год: <span id="world_year"></span>
+        </div>
+        <br><hr>
+        <div>
+            Показатели игрока:
+            
+            <br>Голод: <span id="player_eat"></span>
+            <br>Жажда: <span id="player_drink"></span>
+            <br> Съедено еды: <span id="player_temp"></span>
+            
+            <br> 
+            <br> Координаты: <span id="player_pos"></span>
+            
+        </div>
+    </div>
+    <!-- Диалоговое окно !-->
+    <div id="dialog_window">
+    Где то есть ОШИБКА
+    </div>
+</body>
+</html>
+
+<script src="engine.js"></script>

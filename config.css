@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "dialog_font";
+    src: url('fonts/dialog_font.ttf');
+}
+canvas {
+
+}
+body {
+    background: #3e3e3e;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.telemetry {
+    display: none;
+    width: 300px;
+    height: 470px;
+    padding: 15px;
+    background: #ffffff;
+    overflow: hidden;
+}
+#dialog_window {
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 15px;
+    top: 500px;
+    left: 0px;
+    background: #413e36;
+    color: #e7e1c6;
+    font-size: 12pt;
+    font-family: "dialog_font";
+
+}
+#game_menu {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background: #161616e7;
+    text-align: center;
+    box-shadow: -4px 0px 5px 0px #161616e7, 4px 0px 5px 0px #161616e7;
+}
+#game_menu span:first-child{
+    cursor: default;
+}
+#game_menu span {
+    display: inline-block;
+    cursor: pointer;
+    color: #e7e1c6;
+    font-family: 'dialog_font';
+    font-size: 13pt;
+    padding-top: 15px;
+}
+#game_settings {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    padding: 15px;
+    background: #161616e7;
+    text-align: center;
+    box-shadow: -4px 0px 5px 0px #161616e7, 4px 0px 5px 0px #161616e7;
+    top: 0;
+    left: 0;
+    color: #e7e1c6;
+    font-family: 'dialog_font';
+}
+#game_settings div {
+    font-size: 13pt;
+    padding-top: 15px;
+    text-align: left;
+}
+#game_settings div td {
+    font-size: 10pt;
+    padding-left: 15px;
+}
+#set_ok {
+    text-align: center;
+}
