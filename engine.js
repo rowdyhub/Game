@@ -1,3 +1,6 @@
+/*Author: Sergey N.*/
+
+
 //основной цикл
 window.onload = function(){
     game_cycle();//отрисовка графики
